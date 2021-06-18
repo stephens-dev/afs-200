@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IF=edge">
+        <link rel="stylesheet" type="text/css" href="{% static 'pipeline/styles.css' %}">
+        <title>Home</title>
+        <nav>
+            <ul>
+              <li><a href="about/">About</a></li>
+            </ul>
+          </nav>
+    </head>
+    {% block content %}
+    <body>
+        <div class="cont">
+        <h1>Plumber Brothers</h1>
+        <img src="https://i.pinimg.com/originals/e3/97/cf/e397cf8b415b03889e2faca1133af163.jpg">
+        <p>Do you have a clogged pipe just call us ,and we will fix you problem. As well as 
+            repairs such as Leaking pipes, Worn seals, and replacing any faulty parts. 
+        </p>
+        <P>Are you planning a renovation well we can do that also. Just pick which faucets or shower 
+            that you like, and we will handle the rest from running the pipes ,and installing your new fixtures
+        </P>
+        </div>
+    </body>
+    {% endblock %}
+</html>

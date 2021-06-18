@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IF=edge">
+        <link rel="stylesheet" type="text/css" href="{% static 'pipeline/styles.css' %}">
+        <title>About</title>
+        
+    </head>
+    {% block content %}
+
+    <body>
+        <div class="cont">
+        <h1>Plumber Brothers</h1>
+        <p>This is a family buisness that has been providing exceptional service since 1983.</p>
+        <p>What started as a joke between Mario and Bowser has turned into the buisness that you see today. </p>
+        <img src="https://www.pinclipart.com/picdir/middle/4-41654_unbeatable-duo-mario-and-luigi-db-dokfanbattle-wiki.png">
+        </div>
+    </body>
+    {% endblock %}
+
+    <footer>
+        <phone>(205)-457-2264</phone>
+        <email>Mario_Bros.1983@gmail.com</email>
+    </footer>
+</html>

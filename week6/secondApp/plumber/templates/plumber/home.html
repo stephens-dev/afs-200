@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IF=edge">
+        <link rel="stylesheet" type="text/css" href="{% static 'pipeline/styles.css' %}">
+        <title>Home</title>
+        <nav>
+            <ul>
+              <li><a href="about/">About</a></li>
+            </ul>
+          </nav>
+    </head>
+{% block content %}
+    <body>
+        <h1>Plumber Brothers</h1>
+        <img src="https://i.pinimg.com/originals/e3/97/cf/e397cf8b415b03889e2faca1133af163.jpg">
+        <p>Do you have a clogged pipe just call us ,and we will fix you problem.</p>
+        <P>For an extra we also relocate tutles and other pests.</P>
+    </body>
+{% endblock %}
+</html>

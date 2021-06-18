@@ -12,4 +12,3 @@ def maxing():
     nums.remove(min(nums))
     print('And the middle number is', nums[-1])
 maxing()
-# print(list)
