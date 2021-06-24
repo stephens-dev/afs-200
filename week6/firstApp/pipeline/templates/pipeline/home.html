@@ -10,10 +10,11 @@
             <ul>
               <li><a href="about/">About</a></li>
               {% if user.is_authenticated %}
-              <li><a href="accounts/logout">Logout</a></li>
+              <li><a href="logout/">Logout</a></li>
+              <li><a href="reviews/">Logout</a></li>
               {% else %}
-              <li><a href="accounts/register">Register</a></li>
-              <li><a href="accounts/login">Login</a></li>
+              <li><a href="register/">Register</a></li>
+              <li><a href="login/">Login</a></li>
               {% endif %}
             </ul>
           </nav>
@@ -29,6 +30,14 @@
         <P>Are you planning a renovation well we can do that also. Just pick which faucets or shower 
             that you like, and we will handle the rest from running the pipes ,and installing your new fixtures
         </P>
+        </div>
+        <div>
+        {% if reviews %}
+        {% for entry in reviews %}
+            <h1>{{ entry.name}}</h1>
+            <p>{{entry.content | safe}}</p>
+        {% endfor %}
+        {%endif %}
         </div>
     </body>
     {% endblock %}

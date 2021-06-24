@@ -16,7 +16,7 @@ def login(request):
             return redirect("")
         else: 
             messages.info(request,'Invalid username or password')
-            return redirect('login')
+            return redirect('pipeline/login')
 
     else:
         return render(request,'login.html')
@@ -48,7 +48,7 @@ def register(request):
         return redirect('login')
 
     else:
-        return render(request,'register.html')
+        return render(request,'accounts/pipeline/register.html')
 
 def logout(request):
     auth.logout(request)
