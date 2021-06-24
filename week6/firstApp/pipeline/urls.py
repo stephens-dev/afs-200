@@ -8,7 +8,7 @@ urlpatterns = [
     
     path('', views.home, name="pipeline-home"), 
     path('about/', views.about, name="pipeline-about"),
- 
+    path('reviews/',views.reviews, name="pipeline-reviews"),
 ] 
 # def home (request):
 #     return render(request, 'pipeline/home.html')

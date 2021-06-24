@@ -1,0 +1,12 @@
+{% block content%}
+
+    <h1>{{title}}</h1>
+    
+    {% if reviews %}
+        {% for entry in reviews %}
+            <h1>{{ entry.name}}</h1>
+            <p>{{entry.content | safe}}</p>
+        {% endfor %}
+    {%endif %}
+
+{% endblock content %}
