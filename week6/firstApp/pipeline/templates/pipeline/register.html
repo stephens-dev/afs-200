@@ -8,10 +8,10 @@
         <title>register</title>
         
     </head>
-    {% block content %}
+    <!-- {% block content %} -->
 <body>
-    <form action="register" method="post">
-        <!-- {% csrf_token %} -->
+    <form action="/register/" method="post">
+        {% csrf_token %}
 
         <input type="text" name="first_name" placeholder="First Name"><br>
         <input type="text" name="last_name" placeholder="Last_Name"><br>
@@ -19,7 +19,7 @@
         <input type="email" name="email" placeholder="Email"><br>
         <input type="password" name="password1" placeholder="Password1"><br>
         <input type="password" name="password2" placeholder="Password2"><br>
-        <input type="Submit">
+        <button type="submit">Submit</button>
     </form>
 
     <div>
@@ -28,6 +28,6 @@
         {% endfor %}
     </div>
 </body>
-    {% endblock %}
+    <!-- {% endblock %} -->
 
 </html>

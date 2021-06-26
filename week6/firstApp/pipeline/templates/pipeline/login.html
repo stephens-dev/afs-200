@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,12 +8,12 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="login" method="post">
+    <form action="/login/" method="post">
     {% csrf_token %}
 
         <input type="text" name="username" placeholder="username"><br>
         <input type="password" name="password" placeholder="password"><br>
-        <input type="Submit">
+        <button type="submit">Submit</button>
     </form>
     <div>
         {% for message in messages %}

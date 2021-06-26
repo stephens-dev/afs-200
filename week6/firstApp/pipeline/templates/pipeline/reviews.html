@@ -1,12 +1,26 @@
-{% block content%}
-
-    <h1>{{title}}</h1>
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IF=edge">
+        <link rel="stylesheet" type="text/css" href="{% static 'pipeline/styles.css' %}">
+        <title>Document</title>
+    </head>
+    {% block content %}
+    <body class="rev-body">
+        <h1 class="rev-title">Reviews</h1>
+        <div class="revs">
     
-    {% if reviews %}
-        {% for entry in reviews %}
-            <h1>{{ entry.name}}</h1>
-            <p>{{entry.content | safe}}</p>
-        {% endfor %}
-    {%endif %}
-
-{% endblock content %}
+            {% if reviews %}
+                {% for entry in reviews %}
+        
+                    <h4 class="name">Name: {{ entry.name}}</h4>
+                    <h4 class="content">Content: {{entry.content | safe}}</h4>
+            
+                {% endfor %}
+            {%endif %}
+        </div>
+    </body>
+    {% endblock %}
+</html>

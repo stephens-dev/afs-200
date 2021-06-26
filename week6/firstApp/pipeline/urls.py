@@ -10,7 +10,8 @@ urlpatterns = [
     path('about/', views.about, name="pipeline-about"),
     path('reviews/',views.reviews, name="pipeline-reviews"),
     path('register/', views.register, name='pipeline-register'),
-    path("login/",views.login, name="pipeline-login"),
+    path('login/',views.login, name="pipeline-login"),
+    path('logout/', views.logout, name="pipeline-logout")
 ] 
 # def home (request):
 #     return render(request, 'pipeline/home.html')

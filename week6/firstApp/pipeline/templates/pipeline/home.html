@@ -11,7 +11,8 @@
               <li><a href="about/">About</a></li>
               {% if user.is_authenticated %}
               <li><a href="logout/">Logout</a></li>
-              <li><a href="reviews/">Logout</a></li>
+              <li><a href="reviews/">Reviews</a></li>
+              welcome back, {{user.first_name}}
               {% else %}
               <li><a href="register/">Register</a></li>
               <li><a href="login/">Login</a></li>
@@ -31,6 +32,7 @@
             that you like, and we will handle the rest from running the pipes ,and installing your new fixtures
         </P>
         </div>
+
         <div>
         {% if reviews %}
         {% for entry in reviews %}

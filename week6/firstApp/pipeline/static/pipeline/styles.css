@@ -3,9 +3,9 @@ img {
     height: 400px;
     margin-left: 3%;
 }
-body {
+/* body {
     color: blue;
-}
+} */
 h1 {
     margin-left: 10%;
 }
@@ -19,4 +19,16 @@ p {
 footer {
     margin-left: 42%;
     margin-top: 19%;
+}
+.revs {
+    margin-left: 45%;
+    
+}
+.rev-title {
+    margin-left: 45%;
+    padding-bottom: 5%;
+}
+.rev-body {
+    background-color: black;
+    color: green;
 }
